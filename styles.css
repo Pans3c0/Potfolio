@@ -4,7 +4,7 @@
     --color-secundario: #637ef8;
     --color-fondo: #c5daed;
     --color-texto: #000000;
-    --color-acento: #0e0aeb;
+    --color-acento: #4a73ca;
     --color-brillo: rgba(111, 103, 228, 0.5) 5px 10px 15px;
     --color-macWindow: #FFFFFF;
     --color-macBar: #F2F2F2 ;
@@ -634,6 +634,7 @@ modo {
   }
   body {
     display: flex;
+    position: relative;
     flex-direction: column;
     font-size: 14px !important;
   }
@@ -644,7 +645,7 @@ modo {
   }
 
   header {
-    position: static !important;
+    position: relative;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -684,7 +685,7 @@ modo {
   }
 
   .mac-window {
-    width: 90% !important;
+    width: 100%;
     margin: 1rem auto !important;
   }
 

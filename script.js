@@ -113,6 +113,25 @@ showSection('default');
         section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(section);
     });
+
+    function openModal(photo) {
+      var modal = document.getElementById("myModal");
+      var modalImage = document.getElementById("modalImage");
+      var modalComment = document.getElementById("modalComment");
+    
+      // Establecer la fuente de la imagen y el comentario
+      modalImage.src = photo.querySelector("img").src;
+      modalComment.innerHTML = photo.querySelector(".comment").innerHTML;
+    
+      // Mostrar la modal
+      modal.style.display = "flex";
+    }
+    
+    // Función para cerrar la modal
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
 });
 
 

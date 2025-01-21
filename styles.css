@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
-    --color-primario: #065289;
-    --color-secundario: #637ef8;
-    --color-fondo: #c5daed;
-    --color-texto: #000000;
-    --color-acento: #4a73ca;
-    --color-brillo: rgba(111, 103, 228, 0.5) 5px 10px 15px;
+    --color-primario: #403a35;
+    --color-secundario: #726355;
+    --color-fondo: #e0dcdc;
+    --color-texto: #0d0d0d;
+    --color-acento: #889391;
+    --color-brillo: rgba(228, 174, 103, 0.5) 5px 10px 15px;
     --color-macWindow: #FFFFFF;
     --color-macBar: #F2F2F2 ;
-    --color-bucle2: #59a0b6;
-    --color-bucle3: #84cdfa;
+    --color-bucle2: #b68659;
+    --color-bucle3: #fac784;
 
 }
 
 /* Tema oscuro */
 body.dark-theme {
-  --color-fondo: #01080e;
-  --color-texto: #d8f2fd;
-  --color-primario: #76c3f9;
-  --color-secundario: #07239c;
-  --color-acento: #1814f5;
-  --color-brillo: rgba(131, 213, 245, 0.5) 5px 10px 15px;
+  --color-fondo: #231f1f;
+  --color-texto: #f2f2f2;
+  --color-primario: #cac4bf;
+  --color-secundario: #aa9b8d;
+  --color-acento: #6d7876;
+  --color-brillo: rgba(245, 205, 131, 0.5) 5px 10px 15px;
   --color-macWindow: #1E1E1E;
     --color-macBar: #2C2C2E  ;
-    --color-bucle2: #3032ad;
-    --color-bucle3: #412bbd;
+    --color-bucle2: #aa9b8d;
+    --color-bucle3: #dac496;
 }
 
 body.dark-theme .proyecto {
@@ -648,7 +648,8 @@ footer {
     font-size: 14px !important;
   }
   modo {
-    padding-top: 7%;
+    padding-top: 15%;
+    transform: scale(0.9);
     justify-items: center;
     align-items: center;
     margin: 0 1rem;

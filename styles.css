@@ -715,6 +715,7 @@ footer {
   }
   modo {
     padding-top: 15%;
+    padding-right: 30%;
     transform: scale(0.9);
     justify-items: center;
     align-items: center;
@@ -734,7 +735,8 @@ footer {
   }
 
   nav {
-    grid-area: nav !important;
+    grid-area: nav;
+    margin-right: 5%;
 
   }
 

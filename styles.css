@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
     --color-primario: #065289;
     --color-secundario: #637ef8;
@@ -74,7 +74,12 @@ contenido{
   flex-direction: column;
   
 }
-
+loop{
+  display: inline-block; /* Asegura que el contenedor solo ocupe el espacio necesario */
+  transform: scale(1); /* Escala el contenido un 50% más grande */
+  transform-origin: center;
+  padding-top: 30%;
+}
 /* From Uiverse.io by terenceodonoghue */ 
 .loop {
   position: relative;
@@ -144,7 +149,8 @@ contenido{
     box-shadow: 0 4px 6px rgba(146, 146, 146, 0.2);
     overflow: hidden;
     position:relative;
-    min-height: min-content;
+    height:100% ;
+    
     
   }
   
@@ -209,10 +215,10 @@ contenido{
 
 
 body {
-  font-family: "PT Sans", serif;
-  font-weight: 400;
-  font-style: italic;
-    line-height: 1.6;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    line-height: 1.4;
     color: var(--color-texto);
     background-color: var(--color-fondo);
     margin: 0;
@@ -221,9 +227,7 @@ body {
 }
 
 header {
-    margin-top: 2%;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    left: 0;
     display: grid;
     grid-column: 4fr 2fr 1fr;
     grid-row: 1fr;
@@ -233,6 +237,7 @@ header {
     padding: 1 1rem;
     width: 100%;
     top: 0;
+    margin-bottom: 3%;
     z-index: 1000;
 }
 
@@ -259,8 +264,11 @@ deskopt{
     margin: 0 1rem;
 }
 modo {
-    grid-area: "modo";
-    align-items: center;
+    
+    display: inline-block; /* Asegura que el contenedor solo ocupe el espacio necesario */
+  transform: scale(0.6); /* Escala el contenido un 50% más grande */
+  transform-origin: center;
+  padding-top: 7%;
 }
 nav ul {
     list-style-type: none;
@@ -287,9 +295,8 @@ nav ul li a.active {
 }
 
 main {
-    padding: 6rem 2rem 2rem;
-    max-width: 1200px;
-    margin: 5% auto;
+    padding-right: 7%;
+    padding-left: 7%;
 }
 
 section {
@@ -308,10 +315,19 @@ h1{
 }
 
 h2{
-font-family: "Roboto", serif;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 color: var(--color-secondary);
-font-size: 15px;
-font-style: normal;
+}
+
+strong {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    color: var(--color-texto);
 }
 
 h3 {
@@ -401,13 +417,6 @@ footer {
   
   border-radius: 9999px;
 }
-modo {
-    grid-area: modo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-}	
 
 .toggle-cont .toggle-input {
   display: none;
@@ -639,21 +648,22 @@ modo {
     font-size: 14px !important;
   }
   modo {
+    padding-top: 7%;
     justify-items: center;
     align-items: center;
     margin: 0 1rem;
   }
 
   header {
-    position: relative;
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
       "titulo titulo"
-      "modo nav" !important;
+      "modo nav";
 
     z-index: 1000;
     margin-top: 0%;
+    margin-left: 0;
   }
 
   nav {
@@ -680,17 +690,26 @@ modo {
   }
 
   main {
-    padding-top: 8rem !important;
-    margin-bottom: 50px !important;
+    padding-top: 2rem;
+    margin-bottom: 5px;
+    width: 100vw; /* Todo el ancho de la ventana del navegador */
+    flex-direction: column;
   }
 
+  loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   .mac-window {
     width: 100%;
-    margin: 1rem auto !important;
+    margin: 1rem auto;
   }
 
   .mac-content {
     padding: 10px !important;
+    align-items: center;
   }
 
   .section {
@@ -731,7 +750,7 @@ modo {
   }
 
   main {
-    padding-top: 6rem !important;
+    padding-top: 1rem !important;
   }
 }
 
